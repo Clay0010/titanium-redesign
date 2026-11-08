@@ -71,3 +71,15 @@ html body .beginner-number svg{display:block;width:40px;height:40px}
  html body .p-auth-story>:not(h1){display:none!important}
  html body .p-auth-story h1{font-size:28px;line-height:1.15;margin:0 0 4px}
 }
+/* Admin / workspace page header + toolbar on phones */
+@media (max-width:640px){
+ html body .portal-page .p-heading-actions{display:flex;gap:8px;max-width:none;width:100%;margin-top:16px}
+ html body .portal-page .p-heading-actions .p-btn{flex:1;min-height:44px;padding:10px 16px;border-radius:12px;font-size:14px}
+ html body .portal-page .p-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;margin-bottom:14px}
+ html body .portal-page .p-toolbar label.p-search{grid-column:1/-1;max-width:none;min-width:0;width:100%;height:44px;min-height:44px;padding:0 12px;gap:8px;border:1px solid #dcded5;border-radius:12px;background:#fff}
+ html body .portal-page .p-toolbar label.p-search input{font-size:16px}
+ html body .portal-page .p-toolbar .p-search input::placeholder{font-size:14px}
+ html body .portal-page .p-toolbar select{justify-self:start;height:40px;min-height:40px;width:auto;max-width:100%;padding:0 32px 0 12px;border-radius:12px;font-size:14px}
+ html body .portal-page .p-toolbar .p-quiet{justify-self:end;font-size:12px;white-space:nowrap}
+ html body .portal-page .p-toolbar label.p-search+.p-quiet{grid-column:1/-1;justify-self:start}
+}
