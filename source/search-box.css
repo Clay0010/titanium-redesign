@@ -1,0 +1,13 @@
+/* Search Box: pill, leading glyph, clear action and keyboard shortcut hint. */
+label.t-search{display:flex;align-items:center;gap:.5rem;border:1px solid var(--p-line);border-radius:999px;padding:.5rem .875rem;min-height:44px;background:#efefea;color:var(--ink);transition:background .15s;box-shadow:none}
+label.t-search:focus-within{background:#fff;outline:none;box-shadow:none;border-color:var(--p-line)}
+.t-search [hidden]{display:none!important}
+.t-search>svg{position:static!important;flex:none;width:.9375rem;height:.9375rem;stroke:currentColor;color:var(--p-muted);pointer-events:none}
+label.t-search input,.portal-page label.t-search input{width:100%;min-width:0;flex:1;padding:0!important;margin:0;height:auto;min-height:0;border:0;border-radius:0;background:transparent;font-family:'Ubuntu',sans-serif;font-size:.84375rem;line-height:1.6;color:inherit;outline:none;box-shadow:none}
+.t-search input::-webkit-search-cancel-button{appearance:none}
+.t-search input::placeholder{color:var(--p-muted)}
+.t-search .t-search-clear{display:grid;place-items:center;flex:none;width:1.375rem;height:1.375rem;padding:0;margin:0;border:0;background:transparent;color:var(--p-muted);cursor:pointer;border-radius:50%}
+.t-search .t-search-clear:hover{color:var(--ink);background:#e4e4dc}
+.t-search .t-search-clear>svg{position:static;width:.9375rem;height:.9375rem}
+.t-search-shortcut{flex:none;display:inline-flex;align-items:center;white-space:nowrap;user-select:none;padding:.2rem .375rem;border:1px solid var(--p-line);border-radius:.25rem;background:#fff;font-family:monospace;font-size:.625rem;font-weight:500;line-height:1;color:var(--p-muted)}
+@media(max-width:639px){.t-search-shortcut{display:none}.portal-page label.t-search input,label.t-search input{font-size:1rem}}

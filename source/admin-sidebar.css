@@ -1,0 +1,70 @@
+/* Sidebar composition follows the supplied expanded / compact reference. */
+.portal-page[data-mode=admin] .p-sidebar{width:264px;background:#fff;border-inline-end:1px solid #e9e9e3;overflow:visible}
+.portal-page[data-mode=admin] .p-main{margin-left:264px}
+.portal-page[data-mode=admin] .p-sidebar-head{padding:28px 22px 22px;background:#fff;flex:none}
+.p-admin-identity{display:flex;align-items:center;gap:12px;min-width:0;padding-bottom:24px;border-bottom:1px solid #efefeb}
+.portal-page[data-mode=admin] .p-admin-identity>.p-avatar{width:42px;height:42px;font-size:13px;background:#f3eee6;color:#8a5821}
+.p-admin-identity-text{min-width:0;display:grid;gap:3px}
+.portal-page[data-mode=admin] .p-admin-identity .p-workmark{font-size:10px;font-weight:400;color:#85867d;line-height:1.5;margin:0}
+.p-admin-identity-text>strong{font-size:13px;line-height:1.4;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.portal-page[data-mode=admin] .p-admin-identity .p-side-caption{font-size:9px;line-height:1.5;margin:0;color:#8a8c81}
+.portal-page[data-mode=admin] .p-side-links{padding:0 18px 16px;overflow-x:hidden;background:#fff;gap:5px}
+.portal-page[data-mode=admin] .p-nav-label{padding:5px 12px 10px;font-size:10px;color:#8a8b83;line-height:1.5}
+.portal-page[data-mode=admin] .p-nav-label.p-account-divider{padding-top:22px;margin-top:18px;border-top:1px solid #efefeb}
+.p-sidebar-collapse{position:absolute;z-index:3;inset-inline-end:-14px;top:43px;width:28px;height:30px;display:grid;place-items:center;border:1px solid #e8e8e2;border-radius:8px;background:#fff;color:#686c60;cursor:pointer;box-shadow:0 2px 4px #20211f05}
+.p-sidebar-collapse>svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.p-folder-tree .p-tree-row{min-height:44px;gap:12px;padding:10px 12px!important;font-size:13px;border-radius:10px;color:#7a7d72}
+.p-folder-tree>li+li{margin-block-start:6px}
+.p-tree-icon{width:20px;height:20px;display:grid;place-items:center;flex:none}
+.p-tree-icon>.p-icon{width:20px;height:20px}
+.p-folder-tree .p-tree-row>.p-tree-chevron{order:4;margin-inline-start:auto;width:14px;height:14px}
+.p-folder-tree .p-tree-row[data-expandable=false]>.p-tree-chevron{display:none}
+.p-folder-tree .p-tree-count{display:none}
+.p-folder-tree [aria-expanded=true]>.p-tree-row{background:#f5f5f1;color:#34372e}
+.p-folder-tree .p-tree-row.is-selected{color:var(--p-orange,#ff8a00);background:var(--p-soft)}
+.p-folder-tree>li>[role=group]{position:relative;margin:5px 0 9px 30px;padding-inline-start:13px;border-inline-start:1px solid #eeeeE8}
+.p-folder-tree>li>[role=group]>li{position:relative}
+.p-folder-tree>li>[role=group]>li:before{content:'';position:absolute;inset-inline-start:-14px;top:0;width:12px;height:24px;border-inline-start:1px solid #eeeeE8;border-bottom:1px solid #eeeeE8;border-end-start-radius:8px}
+.p-folder-tree [role=group] .p-tree-row{min-height:36px;margin:4px 0;padding:8px 12px!important;font-size:12px;gap:0}
+.portal-page[data-mode=admin] .p-side-links>.p-profile-link,.portal-page[data-mode=admin] .p-sidebar-footer-link,.portal-page[data-mode=admin] .p-signout{display:flex;align-items:center;gap:12px;padding:11px 12px;margin:0;min-height:42px;font-size:13px;font-weight:400;line-height:1.5;text-decoration:none;border:0;border-radius:10px;background:transparent;color:#7a7d72}
+.p-profile-link .p-icon,.p-sidebar-footer-link .p-icon,.p-signout .p-icon{width:20px;height:20px;flex:none}
+.portal-page[data-mode=admin] .p-sidebar-footer{padding:12px 18px 18px;background:#fff;flex:none;border-top:1px solid #efefeb}
+.portal-page[data-mode=admin] .p-sidebar-footer-link:hover,.portal-page[data-mode=admin] .p-side-links>.p-profile-link:hover{background:#f5f5f1;color:#31362a}
+.portal-page[data-mode=admin] .p-signout{width:100%;color:#b74435;text-align:start;cursor:pointer}
+.portal-page[data-mode=admin] .p-signout:hover{background:#fff4f0}
+.p-back-website .p-icon{transform:rotate(180deg)}
+.p-sidebar-tooltip{position:fixed;z-index:300;inset:auto;margin:0;padding:9px 12px;border:0;border-radius:6px;background:#20211f;color:#fff;font-family:'Ubuntu',sans-serif;font-size:12px;line-height:1.5;transform:translateY(-50%);box-shadow:0 5px 15px #20211f20;pointer-events:none;max-width:200px}
+.p-sidebar-tooltip[hidden]{display:none!important}
+.p-sidebar-flyout{position:fixed;inset:auto;margin:0;width:215px;max-width:calc(100vw - 115px);max-height:calc(100dvh - 24px);padding:10px;border:1px solid #e5e5df;border-radius:14px;background:#fff;box-shadow:0 12px 35px #20211f20;font-family:'Ubuntu',sans-serif;color:#65695b;overflow:auto}
+.p-sidebar-flyout-title{display:block;padding:9px 10px;font-size:11px;font-weight:500;color:#8a8b82}
+.p-sidebar-flyout nav{display:grid;gap:3px}
+.p-sidebar-flyout a{display:block;padding:10px;border-radius:8px;font-size:12px;line-height:1.5;color:#6c7161;text-decoration:none}
+.p-sidebar-flyout a:hover{background:#f5f5f1;color:#252a1e}.p-sidebar-flyout a[aria-current]{background:var(--p-soft);color:var(--p-orange,#ff8a00)}
+@media(min-width:1001px){
+ .portal-page[data-mode=admin] .p-sidebar.is-collapsed{width:84px}
+ .portal-page[data-mode=admin] .p-shell:has(.p-sidebar.is-collapsed)>.p-main{margin-left:84px}
+ .portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-sidebar-head{padding:28px 15px 19px}
+ .p-sidebar.is-collapsed .p-admin-identity{justify-content:center;padding-bottom:24px}
+ .p-sidebar.is-collapsed .p-admin-identity-text{display:none}
+ .p-sidebar.is-collapsed .p-sidebar-collapse>svg{transform:rotate(180deg)}
+ .portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-side-links{padding-inline:14px}
+ .portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-nav-label{padding:5px 0 12px;text-align:center;font-size:8px}
+ .p-sidebar.is-collapsed .p-tree-label,.p-sidebar.is-collapsed .p-tree-chevron,.p-sidebar.is-collapsed .p-folder-tree [role=group],.p-sidebar.is-collapsed .p-profile-link>span,.p-sidebar.is-collapsed .p-sidebar-footer-link>span,.p-sidebar.is-collapsed .p-signout>span{display:none!important}
+ .p-sidebar.is-collapsed .p-folder-tree .p-tree-row{justify-content:center;min-height:46px;padding:12px!important;gap:0}
+ .portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-sidebar-footer{padding:12px 14px 18px}
+ .portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-profile-link,.portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-sidebar-footer-link,.portal-page[data-mode=admin] .p-sidebar.is-collapsed .p-signout{justify-content:center;padding:11px;gap:0}
+}
+@media(max-width:1000px){.portal-page[data-mode=admin] .p-sidebar{width:100%;overflow:hidden}.portal-page[data-mode=admin] .p-main{margin-left:0}.p-sidebar-collapse{display:none}.portal-page[data-mode=admin] .p-sidebar-head{padding:12px 24px;display:block}.p-admin-identity{display:none}.portal-page[data-mode=admin] .p-mobile-nav{display:flex}.portal-page[data-mode=admin] .p-side-links{padding-inline:18px}.portal-page[data-mode=admin] .p-sidebar.is-open .p-sidebar-footer{padding:10px 18px 14px}}
+@media(max-width:640px){.portal-page[data-mode=admin] .p-sidebar-head{padding:12px 18px}}
+
+.portal-page[data-mode=admin] .p-side-links>.p-profile-link[aria-current="page"]{background:var(--p-soft);color:var(--p-orange,#ff8a00);font-weight:500}
+
+/* Smooth rail collapse / expand and label fades. */
+.portal-page[data-mode=admin] .p-sidebar.is-animating{transition:width .26s cubic-bezier(.2,.7,.2,1)}
+.portal-page[data-mode=admin] .p-shell:has(.p-sidebar.is-animating)>.p-main{transition:margin-left .26s cubic-bezier(.2,.7,.2,1)}
+.p-sidebar :is(.p-tree-label,.p-tree-chevron,.p-folder-tree [role=group],.p-profile-link>span,.p-sidebar-footer-link>span,.p-signout>span,.p-admin-identity-text,.p-nav-label){transition:opacity .2s ease}
+.p-sidebar.is-fading :is(.p-tree-label,.p-tree-chevron,.p-folder-tree [role=group],.p-profile-link>span,.p-sidebar-footer-link>span,.p-signout>span,.p-admin-identity-text,.p-nav-label){opacity:0;transition-duration:.12s}
+.p-sidebar.is-revealing :is(.p-tree-label,.p-tree-chevron,.p-folder-tree [role=group],.p-profile-link>span,.p-sidebar-footer-link>span,.p-signout>span,.p-admin-identity-text,.p-nav-label){opacity:0;transition:none}
+.p-sidebar-collapse>svg{transition:transform .26s cubic-bezier(.2,.7,.2,1)}
+.p-folder-tree .p-tree-row,.portal-page[data-mode=admin] :is(.p-profile-link,.p-sidebar-footer-link,.p-signout),.p-sidebar-flyout a{transition:background-color .18s ease,color .18s ease}
+@media(prefers-reduced-motion:reduce){.portal-page[data-mode=admin] .p-sidebar.is-animating,.portal-page[data-mode=admin] .p-shell>.p-main,.p-sidebar *,.p-sidebar-flyout a{transition:none!important}}

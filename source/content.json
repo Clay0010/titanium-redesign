@@ -1,0 +1,327 @@
+{
+  "courses": [
+    {
+      "id": "ceh",
+      "name": "Certified Ethical Hacker",
+      "short": "CEH",
+      "category": "Cybersecurity",
+      "theme": "security",
+      "icon": "shield",
+      "label": "EC-Council",
+      "desc": "Explore ethical hacking and develop your career in cybersecurity with CEH training.",
+      "overview": "CEH is one of the globally accredited technical courses offered by Titanium Training Center. Connect with the team to learn about the current program, practical training, and certification requirements.",
+      "audience": "Professionals interested in ethical hacking and cybersecurity. Speak with our team about the experience needed for the current course."
+    },
+    {
+      "id": "ccna",
+      "name": "Cisco Certified Network Associate",
+      "short": "CCNA",
+      "category": "Networking",
+      "theme": "network",
+      "icon": "network",
+      "label": "Networking",
+      "desc": "Take your next step in networking with CCNA training at Titanium.",
+      "overview": "CCNA is part of Titanium’s technical training offering. Explore networking with instructors who hold specialized certifications, and ask the team about the latest course outline.",
+      "audience": "Learners looking to build or develop their networking skills. Our team can help you understand the entry requirements."
+    },
+    {
+      "id": "iso27001",
+      "name": "ISO/IEC 27001",
+      "short": "ISO 27001",
+      "category": "Cybersecurity",
+      "theme": "iso",
+      "icon": "shield",
+      "label": "PECB",
+      "desc": "Develop your understanding of information security and international standards.",
+      "overview": "Titanium partners with PECB to offer accredited ISO and compliance training aligned with international standards. Ask about the available ISO/IEC 27001 program and the certification pathway that fits your goals.",
+      "audience": "Professionals interested in information security management and ISO standards."
+    },
+    {
+      "id": "cism",
+      "name": "Information Security Management",
+      "short": "CISM",
+      "category": "Cybersecurity",
+      "theme": "security",
+      "icon": "shield",
+      "label": "Professional development",
+      "desc": "Explore information security management with Titanium’s specialist instructors.",
+      "overview": "Titanium’s team includes Bahaa Ali, an instructor in ISO 27001 and CISM, and Saif Bassim, whose certifications include CISM. Contact the team to discuss information security management training.",
+      "audience": "Professionals interested in developing their information security management knowledge."
+    },
+    {
+      "id": "full-stack",
+      "name": "Full Stack Development",
+      "short": "Full Stack",
+      "category": "Programming",
+      "theme": "code",
+      "icon": "code",
+      "label": "Programming",
+      "desc": "Build your programming skills with hands-on training and specialist guidance.",
+      "overview": "Programming is one of Titanium’s advanced training areas. The team includes Fadi Ramzi, a full stack instructor. Ask about current courses, the technologies covered, and practical projects.",
+      "audience": "Learners and professionals who want to develop their programming skills. The team can recommend an appropriate starting point."
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle Database",
+      "short": "Oracle",
+      "category": "Databases",
+      "theme": "data",
+      "icon": "database",
+      "label": "Databases",
+      "desc": "Develop database skills with guidance from Titanium’s Oracle instructors.",
+      "overview": "Databases are part of Titanium’s advanced course offering. Ziad Fawzi Sami and Yasser Abdulrahman teach Oracle Database. Contact the team for current course content and requirements.",
+      "audience": "Learners interested in databases and professionals looking to develop their existing database skills."
+    },
+    {
+      "id": "linux",
+      "name": "Linux System Administration",
+      "short": "Linux",
+      "category": "Systems",
+      "theme": "linux",
+      "icon": "terminal",
+      "label": "Linux · RHCSA",
+      "desc": "Explore Linux and system administration with specialist technical training.",
+      "overview": "System administration is one of Titanium’s professional development tracks. Instructor Tarik Chelabi specializes in Linux–RHCSA. Ask the team about current training and certification options.",
+      "audience": "Learners interested in Linux administration and IT professionals who want to enhance their system administration skills."
+    },
+    {
+      "id": "future-wave",
+      "name": "FUTURE WAVE",
+      "short": "Future\nWave",
+      "category": "Beginners",
+      "theme": "future",
+      "icon": "spark",
+      "label": "Start here",
+      "desc": "Your first step into IT. A program designed for learners starting from scratch.",
+      "overview": "FUTURE WAVE is a program launched by Titanium Center, designed for anyone who wants to enter the field of IT from scratch. Talk with the team to find out about the next available program.",
+      "audience": "Beginners and anyone who wants to enter the field of IT from scratch."
+    }
+  ],
+  "services": [
+    {
+      "id": "courses",
+      "name": "Practical courses",
+      "icon": "book",
+      "desc": "Practical and hands-on training to enhance your skills.",
+      "detail": "Explore training in networking, cybersecurity, databases, programming, and system administration. Start with FUTURE WAVE or develop your skills through Titanium’s advanced courses.",
+      "bullets": [
+        "Beginner and professional pathways",
+        "Practical, hands-on learning",
+        "In-person and online training"
+      ]
+    },
+    {
+      "id": "training",
+      "name": "Corporate training",
+      "icon": "team",
+      "desc": "Customized programs to train company teams.",
+      "detail": "Discuss your team’s training needs with Titanium. Corporate training programs are customized for companies looking to develop their teams.",
+      "bullets": [
+        "Training for company teams",
+        "Programs tailored to your needs",
+        "Support from specialist instructors"
+      ]
+    },
+    {
+      "id": "certification",
+      "name": "Professional certification",
+      "icon": "award",
+      "desc": "Earn globally recognized certifications.",
+      "detail": "Explore certification training with partners including EC-Council, PECB, and CompTIA. Our team can guide you toward a program that fits your goals.",
+      "bullets": [
+        "International training partners",
+        "Technical certification pathways",
+        "Guidance on available programs"
+      ]
+    },
+    {
+      "id": "exams",
+      "name": "Exam center",
+      "icon": "monitor",
+      "desc": "Accredited facility for taking professional exams.",
+      "detail": "Contact Titanium’s exam center to ask about supported professional exams, requirements, and available dates.",
+      "bullets": [
+        "Professional examination facility",
+        "Exam availability inquiries",
+        "Registration guidance"
+      ]
+    }
+  ],
+  "team": [
+    [
+      "Saif Bassim",
+      "OSCP · CISM · RHCE · CEH · RHCSA · eCPPTv2 · CDFE",
+      "saif.jpg"
+    ],
+    [
+      "Bahaa Ali",
+      "ISO 27001 · CISM",
+      "bahaa.jpg"
+    ],
+    [
+      "Zaid Hasan",
+      "Penetration testing",
+      "zaid.png"
+    ],
+    [
+      "Fadi Ramzi",
+      "Full stack development",
+      "fadi.png"
+    ],
+    [
+      "Tarik Chelabi",
+      "Linux · RHCSA",
+      "tarek.jpg"
+    ],
+    [
+      "Ziad Fawzi Sami",
+      "Oracle Database",
+      "ziad.jpg"
+    ],
+    [
+      "Yasser Abdulrahman",
+      "Oracle Database",
+      "yasser.jpg"
+    ]
+  ],
+  "events": [
+    {
+      "id": "hadaf",
+      "day": "15",
+      "month": "January",
+      "weekday": "Friday",
+      "time": "11:00 pm – 5:00 pm",
+      "title": "Cybersecurity workshop in cooperation with the Hadaf Foundation",
+      "desc": "Titanium’s community activities include a cybersecurity workshop in cooperation with the Hadaf Foundation."
+    },
+    {
+      "id": "women-in-technology",
+      "day": "23",
+      "month": "January",
+      "weekday": "Saturday",
+      "time": "9:00 pm – 3:00 pm",
+      "title": "Women in Technology",
+      "desc": "Titanium Center participates in the “Women in Technology” program by offering courses in the fields of cybersecurity and networks."
+    },
+    {
+      "id": "cybersecurity-seminar",
+      "day": "04",
+      "month": "February",
+      "weekday": "Thursday",
+      "time": "10:00 pm – 8:00 pm",
+      "title": "An introduction to cybersecurity",
+      "desc": "An introductory seminar on cybersecurity was held at the station."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/gallery-10.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 1"
+    },
+    {
+      "src": "assets/gallery-11.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 2"
+    },
+    {
+      "src": "assets/gallery-3.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 3"
+    },
+    {
+      "src": "assets/gallery-4.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 4"
+    },
+    {
+      "src": "assets/gallery-5.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 5"
+    },
+    {
+      "src": "assets/gallery-6.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 6"
+    },
+    {
+      "src": "assets/gallery-7.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 7"
+    },
+    {
+      "src": "assets/gallery-8.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 8"
+    },
+    {
+      "src": "assets/gallery-9.jpg",
+      "type": "students",
+      "alt": "Titanium students and certificate recipients, photo 9"
+    },
+    {
+      "src": "assets/gallery-29afa4ef-adc8-4568-898f-903d4a81076d.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 1"
+    },
+    {
+      "src": "assets/gallery-2b3622ee-3654-4052-94e3-bc6289d7ee3c.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 2"
+    },
+    {
+      "src": "assets/gallery-3cc58fbb-4b35-43b5-b15c-018abfc39cd4.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 3"
+    },
+    {
+      "src": "assets/gallery-6f681354-9ee7-47a3-9393-2f384ff6ce30.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 4"
+    },
+    {
+      "src": "assets/gallery-7b746da6-6d8e-468f-83b6-7b8513cabbb9.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 5"
+    },
+    {
+      "src": "assets/gallery-86a0d82b-6e5d-406c-960d-53dca49678a0.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 6"
+    },
+    {
+      "src": "assets/gallery-9d39b08b-7fe4-4abb-b16e-b56171e0e4cb.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 7"
+    },
+    {
+      "src": "assets/gallery-d1227853-72b4-4a15-a1a3-a0fd8794268d.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 8"
+    },
+    {
+      "src": "assets/gallery-dbd9d79d-4a30-4163-b135-365ffd42a252.jpg",
+      "type": "events",
+      "alt": "Titanium community event, photo 9"
+    }
+  ],
+  "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13339.283024036826!2d44.329732!3d33.297352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577f001e886119%3A0xc43c640a28875679!2sTitanium%20TC!5e0!3m2!1sen!2siq!4v1765960786529!5m2!1sen!2siq",
+  "faq": [
+    {
+      "q": "What is Titanium Center?",
+      "a": "Titanium Center embarked on its educational journey in 2017, aspiring to continue its progress with you in the years to come. The center offers several training courses in the field of information technology, in collaboration with instructors holding specialized certifications in their respective fields, both from within and outside Iraq."
+    },
+    {
+      "q": "What courses does Titanium Center offer?",
+      "a": "Titanium Center offers a wide range of training programs in the field of information technology, divided into two main tracks to suit all levels:\n\n1) FUTURE WAVE Courses – For Beginners\nA program launched by Titanium Center, designed for anyone who wants to enter the field of IT from scratch.\n\n2) Titanium Advanced Courses – Professional Development\nAimed at individuals with limited experience or those working in the field who wish to professionally enhance their skills, these courses include:\n\n• Networking\n• Cyber Security\n• Databases\n• Programming\n• System Administration."
+    },
+    {
+      "q": "Is Titanium Center accredited by international organizations?",
+      "a": "Yes, Titanium Center is a training center accredited by several leading international IT organizations, including:\n\n• EC-Council\n• PECB\n• CompTIA\n\nThe center also received the Best Emerging Center in the Middle East award from EC-Council, recognizing its excellence in training quality and technical skills development according to the highest international standards."
+    },
+    {
+      "q": "What are the advantages of training at Titanium Center?",
+      "a": "Training is available both in person and online, maintaining the same high-quality experience. Practical and hands-on courses help in acquiring real-world skills. Internationally accredited certificates are awarded upon completion of the courses. Support and follow-up are provided to trainees during and after the course."
+    }
+  ]
+}

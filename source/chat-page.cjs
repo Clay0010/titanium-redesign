@@ -1,0 +1,15 @@
+module.exports=({icon})=>{
+ const prompt=(symbol,title,text,question)=>`<button class="assistant-prompt" data-prompt="${question}">${icon(symbol)}<span><strong>${title}</strong><small>${text}</small></span>${icon('arrow')}</button>`;
+ return `<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol><symbol id="compare" viewBox="0 0 24 24"><path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4"/></symbol><symbol id="chat-bubble" viewBox="0 0 24 24"><path d="M21 11a8 8 0 0 1-8 8H8l-5 3V9a7 7 0 0 1 7-7h3a8 8 0 0 1 8 9Z"/><path d="M7 8h10M7 12h7"/></symbol><symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol></defs></svg><section class="assistant-page" aria-labelledby="assistant-title"><div class="assistant-shell">
+ <div class="assistant-workspace">
+  <div class="assistant-topbar"><div class="assistant-title-group"><div><h1 id="assistant-title">Titanium Assistant</h1><span class="assistant-mode" id="assistant-mode">Course guide preview</span></div></div><div class="assistant-toolbar"><a href="contact.html" class="assistant-human">Talk to a person ${icon('diagonal')}</a></div></div>
+  <div class="assistant-scroll" id="assistant-scroll">
+   <div class="assistant-welcome" id="assistant-welcome"><p class="assistant-welcome-label">Your next chapter, a little clearer.</p>
+    <div class="assistant-prompts">${prompt('book','Find my first IT course','Start with the foundations',"I am new to IT. Where should I start?")}${prompt('award','Explore cybersecurity','Find your direction',"What cybersecurity courses can I explore?")}${prompt('compare','Compare two programs','Understand your options',"How do CEH and CCNA compare?")}${prompt('people','Train my team','Plan learning for your company',"I want to arrange training for my company.")}</div>
+
+   </div>
+   <div class="assistant-messages" id="assistant-messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions" hidden></div>
+  </div>
+  <div class="assistant-composer-area"><div class="assistant-error" id="assistant-error" role="alert" hidden></div><form class="assistant-composer" id="assistant-form"><label for="assistant-input" class="visually-hidden">Your message to Titanium Assistant</label><textarea id="assistant-input" name="message" placeholder="Ask about a course, a skill, or your next step…" rows="1" maxlength="2000" required></textarea><div class="assistant-composer-bottom"><span>Enter to send <span aria-hidden="true">·</span> Shift + Enter for a new line</span><button id="assistant-send" type="submit" aria-label="Send message" disabled>${icon('arrow')}</button></div></form><p class="assistant-disclosure" id="assistant-disclosure">Course guide preview. Answers common Titanium questions using the center’s information.</p></div>
+ </div></div></section>`;
+};

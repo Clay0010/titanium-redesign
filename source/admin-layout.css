@@ -1,0 +1,63 @@
+/* Admin uses its own navigation, independent of the public website header. */
+body:has(.portal-page[data-mode=admin])>.header,body:has(.portal-page[data-mode=admin])>.footer{display:none}
+html:has(.portal-page[data-mode=admin]){scroll-padding-top:24px}
+.portal-page[data-mode=admin]{padding:0;min-height:100dvh}
+.portal-page[data-mode=admin] .p-shell{display:block;max-width:none;padding:0;margin:0}
+.portal-page[data-mode=admin] .p-sidebar{position:fixed;inset:0 auto 0 0;width:260px;height:100dvh;display:flex;flex-direction:column;align-self:auto;padding:0;background:#f5f5f1;border-right:1px solid var(--p-line);z-index:30;overflow:hidden}
+.portal-page[data-mode=admin] .p-sidebar-head{flex:none;padding:18px 20px 14px;background:#f5f5f1}
+.portal-page[data-mode=admin] .p-workmark{display:block;margin-bottom:4px;font-size:18px}
+.portal-page[data-mode=admin] .p-side-caption{display:block;margin-bottom:12px;font-size:11px}
+.portal-page[data-mode=admin] .p-back-website{width:100%;justify-content:flex-start;font-size:11px;padding:7px 11px;min-height:34px;border-radius:10px}
+.p-back-website .p-icon{transform:rotate(180deg);width:17px;height:17px}
+.portal-page[data-mode=admin] .p-side-links{display:flex;flex-direction:column;gap:4px;flex:1 1 0;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#cfcec3 transparent;padding:0 18px 16px;margin:0;border:0;border-radius:0;background:transparent}
+.portal-page[data-mode=admin] .p-side-links>a{flex:none;padding:12px;font-size:13px}
+.portal-page[data-mode=admin] .p-side-links>a{padding-inline-start:1.875rem}
+.portal-page[data-mode=admin] .p-nav-label{flex:none;padding-top:22px}
+.portal-page[data-mode=admin] .p-sidebar-footer{flex:none;padding:0 20px 14px;background:#f5f5f1}
+.portal-page[data-mode=admin] .p-side-user{display:flex;margin-top:0;padding-top:10px;gap:8px}
+.portal-page[data-mode=admin] .p-side-user .p-avatar{width:30px;height:30px;font-size:11px}
+.portal-page[data-mode=admin] .p-side-user strong{font-size:12px}
+.portal-page[data-mode=admin] .p-side-user small{font-size:10px}
+.portal-page[data-mode=admin] .p-signout{margin:6px 0 0 38px;font-size:11px}
+.portal-page[data-mode=admin] .p-main{margin-left:260px;padding:34px 36px 60px;max-width:1600px}
+.portal-page[data-mode=admin] .p-mobile-nav{display:none}
+@media(max-width:1200px) and (min-width:1001px){.portal-page[data-mode=admin] .p-sidebar{width:235px}.portal-page[data-mode=admin] .p-main{margin-left:235px;padding:28px 25px 50px}.portal-page[data-mode=admin] .p-sidebar-head{padding-inline:18px}.portal-page[data-mode=admin] .p-sidebar-footer{padding-inline:18px}}
+@media(max-width:1000px){
+ .portal-page[data-mode=admin] .p-sidebar{position:sticky;inset:0 auto auto 0;top:0;width:100%;height:auto;border-right:0;border-bottom:1px solid var(--p-line)}
+ .portal-page[data-mode=admin] .p-sidebar-head{padding:12px 24px;display:grid;grid-template-columns:1fr auto;gap:4px 18px;align-items:center}
+ .portal-page[data-mode=admin] .p-workmark{display:none}
+ .portal-page[data-mode=admin] .p-mobile-nav{display:flex;grid-column:1/-1;justify-content:space-between;gap:15px}
+ .portal-page[data-mode=admin] .p-mobile-nav strong{font-size:18px}
+ .portal-page[data-mode=admin] .p-side-caption{margin:0;font-size:11px}
+ .portal-page[data-mode=admin] .p-back-website{width:auto;min-height:32px;padding:6px 10px;font-size:11px}
+ .portal-page[data-mode=admin] .p-side-links,.portal-page[data-mode=admin] .p-sidebar-footer{display:none}
+ .portal-page[data-mode=admin] .p-main{margin-left:0;padding:25px 24px 50px}
+ .portal-page[data-mode=admin] .p-sidebar.is-open{position:fixed;height:100dvh;max-height:100dvh}
+ .portal-page[data-mode=admin] .p-sidebar.is-open .p-side-links{display:flex;grid-template-columns:none;margin:0;padding:0 18px 16px;border:0;border-radius:0;flex:1 1 0;min-height:0;overflow-y:auto}
+ .portal-page[data-mode=admin] .p-sidebar.is-open .p-sidebar-footer{display:block;padding-bottom:14px}
+ body:has(.portal-page[data-mode=admin] .p-sidebar.is-open){overflow:hidden}
+}
+@media(max-width:640px){.portal-page[data-mode=admin] .p-sidebar-head{padding:10px 18px}.portal-page[data-mode=admin] .p-main{padding:22px 18px 45px}.portal-page[data-mode=admin] .p-preview{margin-bottom:24px}}
+/* Keep form controls quiet on focus across the public site and admin forms. */
+:is(input,select,textarea):focus,:is(input,select,textarea):focus-visible{outline:none!important;box-shadow:none!important}
+.portal-page .p-btn.danger{background:#c9362b;border-color:#c9362b;color:#fff}
+.portal-page .p-btn.danger:hover{background:#ad2b22;border-color:#ad2b22;color:#fff}
+.p-capacity-intro{font-size:12px!important;margin-bottom:5px!important}
+.p-capacity-item{padding:18px 0;border-bottom:1px solid var(--p-line)}
+.p-capacity-item:last-child{border-bottom:0;padding-bottom:0}
+.p-capacity-item a{font-size:13px;font-weight:500;line-height:1.5}
+.p-capacity-item p{font-size:11px;margin:5px 0 12px}
+.p-capacity-item .p-progress{margin:10px 0 8px;height:6px}
+.p-capacity-item small{font-size:11px;color:var(--p-muted)}
+.p-dialog.p-record-dialog{width:min(860px,calc(100% - 32px));padding:28px;background:#fafaf7}
+.p-record-dialog .p-dialog-head{margin-bottom:22px}
+.p-record-card{border:1px solid #deded7;border-radius:20px;background:#fff;overflow:hidden}
+.portal-page .p-record-card-heading{margin:0;padding:23px 26px;border-bottom:1px solid #deded7;font-size:20px;font-weight:500;line-height:1.4;overflow-wrap:anywhere}
+.p-record-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:0;background:#e5e5df}
+.p-record-cell{padding:23px 26px;background:#fff;min-width:0}
+.p-record-cell.full{grid-column:1/-1}
+.p-record-cell dt{font-size:12px;font-weight:500;line-height:1.5;color:#7d8075;margin-bottom:10px}
+.p-record-cell dd{margin:0;font-size:16px;line-height:1.6;color:#262920;white-space:pre-wrap;overflow-wrap:anywhere}
+.p-record-cell dd a{color:#a84f00;text-decoration:underline;text-underline-offset:3px}
+.p-record-dialog .p-form-actions{border:0;padding-top:0;margin-top:22px}
+@media(max-width:640px){.p-dialog.p-record-dialog{padding:20px;width:calc(100% - 28px)}.portal-page .p-record-card-heading{font-size:18px;padding:20px}.p-record-grid{grid-template-columns:1fr}.p-record-cell.full{grid-column:auto}.p-record-cell{padding:19px 20px}.p-record-cell dt{font-size:11px;margin-bottom:7px}.p-record-cell dd{font-size:14px}.p-record-dialog .p-dialog-head h2{font-size:22px}}

@@ -1,0 +1,28 @@
+/* Scroll hints for overflowing segmented filters */
+.seg-wrap{position:relative;max-width:100%;min-width:0}
+.seg-wrap>.segmented{max-width:100%}
+.seg-wrap::before,.seg-wrap::after{content:"";position:absolute;top:1px;bottom:1px;width:56px;z-index:2;pointer-events:none;opacity:0;transition:opacity .25s}
+.seg-wrap::before{left:1px;border-radius:15px 0 0 15px;background:linear-gradient(90deg,#fff 30%,rgba(255,255,255,0))}
+.seg-wrap::after{right:1px;border-radius:0 15px 15px 0;background:linear-gradient(270deg,#fff 30%,rgba(255,255,255,0))}
+.seg-wrap.can-left::before,.seg-wrap.can-right::after{opacity:1}
+.seg-more{position:absolute;top:50%;z-index:3;display:inline-flex;align-items:center;gap:2px;height:28px;padding:0 8px 0 10px;border:1px solid #f2d8b8;border-radius:999px;background:#fff;color:var(--orange-text,#a84f00);font:600 11px/1 'Ubuntu',sans-serif;box-shadow:0 4px 12px -4px rgba(32,33,31,.25);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(-50%) scale(.9);transition:opacity .2s,transform .2s}
+.seg-more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.seg-more.next{right:6px}
+.seg-more.prev{left:6px;padding:0 10px 0 8px}
+.seg-wrap.can-right .seg-more.next,.seg-wrap.at-end .seg-more.prev{opacity:1;pointer-events:auto;transform:translateY(-50%) scale(1)}
+.seg-more:active{transform:translateY(-50%) scale(.94)}
+@media (prefers-reduced-motion:reduce){.seg-more,.seg-wrap::before,.seg-wrap::after{transition:none}}
+/* Bigger chips on phones */
+@media (max-width:640px){
+ html body .segmented{padding:4px;gap:4px;border-radius:18px}
+ html body .segmented-indicator{top:4px;bottom:4px;border-radius:14px}
+ html body .segmented>.filter,html body .segmented>a{min-height:42px;padding:9px 18px;font-size:14px;border-radius:14px}
+ html body .seg-wrap::before{border-radius:17px 0 0 17px}
+ html body .seg-wrap::after{border-radius:0 17px 17px 0}
+ html body .seg-more{height:32px;font-size:12px;padding:0 9px 0 11px}
+ html body .seg-more.prev{padding:0 11px 0 9px}
+ html body .seg-more svg{width:15px;height:15px}
+}
+/* Arrow-only round buttons */
+html body .seg-more,html body .seg-more.prev{width:30px;height:30px;padding:0;justify-content:center}
+@media (max-width:640px){html body .seg-more,html body .seg-more.prev{width:32px;height:32px;padding:0}html body .seg-more svg{width:16px;height:16px}}

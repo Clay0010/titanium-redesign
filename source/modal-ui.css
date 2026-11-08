@@ -1,0 +1,31 @@
+/* Adapted from the user's native-dialog Modal component; colors inherit Titanium. */
+dialog.t-modal{position:fixed;inset:0;margin:auto;padding:0;width:540px;max-width:calc(100vw - 2rem);max-height:min(88dvh,calc(100dvh - 3rem));overflow:hidden;border:1px solid var(--p-line);border-radius:1rem;background:#fff;color:var(--ink);box-shadow:0 25px 50px -12px #20211f40;font-family:'Ubuntu',sans-serif}
+dialog.t-modal[open]{display:flex;flex-direction:column}
+dialog.t-modal::backdrop{background:#20211f55;backdrop-filter:blur(12px)}
+.t-modal-header{display:flex;flex:none;align-items:flex-start;gap:.875rem;padding:1.25rem 1.25rem 1rem;border-bottom:1px solid var(--p-line);background:#fff}
+.t-modal-icon{display:grid;place-items:center;flex:none;width:2.25rem;height:2.25rem;border-radius:.5rem;background:var(--p-soft);color:var(--orange-text)}
+.t-modal-icon>svg{width:1.125rem;height:1.125rem}
+.t-modal-heading{min-width:0;flex:1;padding-top:.125rem}
+dialog.t-modal .t-modal-title{margin:0;font-size:1.125rem;font-weight:500;line-height:1.45;letter-spacing:0;overflow-wrap:anywhere}
+dialog.t-modal .t-modal-description{margin:.125rem 0 0;font-size:.8125rem;color:var(--p-muted);line-height:1.6}
+dialog.t-modal .t-modal-close{position:static;display:grid;place-items:center;flex:none;width:1.875rem;height:1.875rem;padding:0;margin:0;border:1px solid var(--p-line);border-radius:.375rem;background:#fff;color:var(--p-muted);cursor:pointer;transition:background .15s,color .15s}
+dialog.t-modal .t-modal-close svg{width:.9375rem;height:.9375rem}
+dialog.t-modal .t-modal-close:hover{background:var(--paper);color:var(--ink)}
+.t-modal-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:1.25rem}
+.t-modal-footer{flex:none;display:flex;align-items:center;justify-content:flex-end;gap:1rem;border-top:1px solid var(--p-line);background:var(--paper);padding:1rem 1.25rem}
+dialog.t-modal .t-modal-footer .p-form-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;width:100%;gap:.75rem;padding:0;margin:0;border:0}
+dialog.t-modal.p-record-dialog{width:860px;padding:0}
+dialog.t-modal.p-edit-dialog{width:820px}
+dialog.t-modal.lightbox{width:1000px}
+dialog.t-modal.lightbox .lightbox-inner{padding:0}
+dialog.t-modal.lightbox img{height:55dvh;max-height:700px}
+dialog.t-modal .lightbox-bar{width:100%;padding:0;margin:0;border:0}
+dialog.t-modal .t-modal-footer>a{color:var(--orange-text);font-size:.8125rem;line-height:1.5;text-decoration:none}
+dialog.t-modal .t-modal-footer>a:hover{text-decoration:underline;text-underline-offset:3px}
+/* Detail data belongs directly to the dialog; there is no nested card shell. */
+dialog.t-modal.p-record-dialog>.t-modal-body{padding:0}
+.p-record-dialog .p-record-grid{border:0;border-radius:0;margin:0}
+@keyframes titanium-modal-in{from{opacity:0;transform:translateY(.75rem) scale(.98)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:no-preference){dialog.t-modal[open]{animation:titanium-modal-in .2s ease}}
+@media(max-width:640px){dialog.t-modal,dialog.t-modal.p-record-dialog{max-width:calc(100vw - 1.5rem);width:calc(100vw - 1.5rem);padding:0}.t-modal-header{padding:1.125rem 1rem 1rem;gap:.75rem}.t-modal-body{padding:1rem}.t-modal-footer{padding:1rem}.t-modal-icon{width:2rem;height:2rem}dialog.t-modal .t-modal-title{font-size:1.0625rem}dialog.t-modal .t-modal-description{font-size:.75rem}.t-modal-footer .p-btn{min-height:2.625rem}}
+@media(max-width:640px){dialog.t-modal.p-edit-dialog{width:calc(100vw - 1.5rem)}}

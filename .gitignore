@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+
+# Not part of the website (kept locally, excluded from GitHub Pages)
+figma-preparation/
+titanium-complete-site/
+titanium-complete-site.zip
+previews/
+*.blend
+*.blend1
