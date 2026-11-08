@@ -12,7 +12,8 @@ html body .header .header-signin:hover::after{transform:translateX(3px)}
 html body .header .account-trigger{border-radius:999px;transition:background .15s,box-shadow .15s}
 html body .header .account-trigger:hover{box-shadow:0 0 0 4px var(--orange-soft)}
 html body .header .menu-toggle{border-radius:12px;transition:background .15s,transform .15s}
-html body .header .menu-toggle[aria-expanded=true]{background:#ffe4bf}
+html body .header .menu-toggle[aria-expanded=true],html body .header .menu-toggle[aria-expanded=true]:hover{background:var(--orange);border-color:var(--orange);color:#fff;box-shadow:0 6px 16px -6px rgba(255,138,0,.67)}
+html body .header .menu-toggle{transition:background .2s,border-color .2s,box-shadow .2s,transform .15s}
 html body .header .menu-toggle:active{transform:scale(.94)}
 
 @media (min-width:1001px){
@@ -56,3 +57,4 @@ html body .header .notification-toggle:hover,html body .header .account-trigger:
  html body .header .nav-links.is-open>a::after{width:6px;height:6px;border-width:1.5px}
  html body .header .nav-links.is-open>a[aria-current]::after{width:6px;height:6px}
 }
+html body .header .menu-toggle{flex:none;min-width:38px;place-items:center;justify-content:center;align-items:center}
